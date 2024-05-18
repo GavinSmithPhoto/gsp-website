@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gavin Smith Photo</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            font-size: 20px; /* Increased body text size */
+            line-height: 1.6;
+            margin: 0;
+        }
+        header {
+            background-color: #334;
+            color: #fff;
+            padding: 1em 0;
+            text-align: center;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        header img {
+            max-height: 150px;
+            max-width: 200px;
+            position: absolute;
+            left: 20px;
+        }
+        header div {
+            text-align: center;
+            flex: 1;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #556;
+            flex-wrap: wrap;
+        }
+        nav a {
+            color: #fff;
+            padding: 1em;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background-color: #778;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2em;
+        }
+        .photo-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1em;
+        }
+        .photo-grid img {
+            width: 100%;
+            border-radius: 8px;
+        }
+        footer {
+            background-color: #334;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+            margin-top: 2em;
+        }
+        .placeholder {
+            background-color: #eee;
+            padding: 1em;
+            border-radius: 8px;
+            margin: 1em 0;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            body {
+                font-size: 18px; /* Slightly smaller text size for mobile */
+            }
+            header {
+                padding: 0.5em 0;
+            }
+            nav a {
+                padding: 0.5em;
+            }
+            .container {
+                padding: 1em;
+            }
+            .photo-grid {
+                grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            }
+            header img {
+                max-height: 100px; /* Smaller logo for mobile */
+                max-width: 150px;
+            }
+            header div {
+                padding-left: 2em; /* Added space for logo */
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="photos/logo.png" alt="Logo Placeholder">
+    <div>
+        <h1>Gavin Smith Photo</h1>
+        <p>Aerial Real Estate and Event Photography</p>
+    </div>
+</header>
+
+<nav>
+    <a href="#about">About Us</a>
+    <a href="#services">Services</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<div class="container" id="about">
+    <h2>About Us</h2>
+    <p>Welcome to Gavin Smith Photo! We specialize in aerial real estate and event photography, using the latest drone technology to capture stunning, high-resolution images that showcase properties and events at their best. With a keen eye for detail and a passion for photography, we ensure every shot highlights the unique features and moments of each assignment.</p>
+    <p>Founded by Gavin Smith, our business aims to provide top-notch photography services with a personal touch. We understand the importance of visual storytelling in both real estate and event photography, and we strive to deliver images that leave a lasting impression in a timely manner.</p>
+    <div class="placeholder">
+        <h3>Our Mission</h3>
+        <p>We believe that everyone should have access to the photo resources that can be crucial to selling your home, renting your property, or any other reason you may have. We strive to perfectly capture the most important memories that will last a lifetime with incredible resolution down to the smallest details that matter most.</p>
+    </div>
+    <div class="placeholder">
+        <h3>More About Me</h3>
+        <p>Hello, I'm Gavin Smith. I started Gavin Smith Photo because I have a passion for photography and I believe that I have the skills and knowledge to capture your aerial photography needs with attention to detail that will leave you pleased with my work. I do all photography and editing myself and aim to have your projects completed in a timely manner so you don't have to waste your valuable time worrying about your photos. I look forward to working with you!</p>
+    </div>
+</div>
+
+<div class="container" id="services">
+    <h2>Our Services</h2>
+    <p>At Gavin Smith Photo, we offer a range of services to meet your photography needs:</p>
+    <h3>Aerial Photography</h3>
+    <ul>
+        <li>High-Resolution Photos of Your Property</li>
+        <li>Photo Editing and Enhancement</li>
+        <li>Photos from Every Angle</li>
+        <li>Personalized Videos Showcasing Your Property</li>
+    </ul>
+    <h3>Event Photography</h3>
+    <ul>
+        <li>Weddings and Celebrations</li>
+        <li>Corporate Events</li>
+        <li>Outdoor Events</li>
+        <li>Special Occasions</li>
+        <li>Photo Editing and Enhancement</li>
+    </ul>
+    <div class="placeholder">
+        <h3>Pricing</h3>
+        <p>We are willing to work with your budget and fulfill your every need. If we have the ability to do something, we will do it for you. For a quote, fill out our form or email us and we will reach out to you as soon as we can.</p>
+        <p><a href="https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAO__XteTJBURUpDWU5HRERXQVNKUExMVDRLTUFUSENMQy4u" target="_blank">Click here for a quote</a></p>
+    </div>
+</div>
+
+<div class="container" id="gallery">
+    <h2>Gallery</h2>
+    <div class="photo-grid">
+        <img src="photos/DJI_0064.JPG" alt="Sample Photo 1">
+        <img src="photos/DJI_0157.JPG" alt="Sample Photo 2">
+        <img src="photos/DJI_0119.JPG" alt="Sample Photo 3">
+        <img src="photos/DJI_0036.JPG" alt="Sample Photo 4">
+        <img src="photos/jriver1.JPG" alt="Sample Photo 5">
+        <img src="photos/jriver2.JPG" alt="Sample Photo 6">
+    </div>
+    <div class="placeholder">
+        <h3>Interactive 360° Panorama Photos</h3>
+        <iframe src="https://momento360.com/e/u/02146b4055374fa3b4936851a2c8aa23?utm_campaign=embed&utm_source=other&heading=0&pitch=0&field-of-view=75&size=medium&display-plan=true" width="100%" height="500px" frameborder="0" allowfullscreen></iframe>
+    </div>
+</div>
+
+<div class="container" id="contact">
+    <h2>Contact Us</h2>
+    <p>If you're interested in our services or have any questions, please get in touch:</p>
+    <p>Phone: (385) 202-8305</p>
+    <p>Email: <a href="mailto:gavinsmithphoto@outlook.com">gavinsmithphoto@outlook.com</a></p>
+    <br>
+    <h3>Location</h3>
+    <p>We are based in Utah's Salt Lake Valley.</p>
+    <br>
+    <p>If you have any questions, feel free to reach out to us at: <a href="mailto:gavinsmithphoto@outlook.com">gavinsmithphoto@outlook.com</a></p>
+    <p>Or for a quote, fill out this form here: <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAO__XteTJBURUpDWU5HRERXQVNKUExMVDRLTUFUSENMQy4u" target="_blank">Click here for a quote</a></p>
+</div>
+
+<footer>
+    <p>&copy; 2024 Gavin Smith Photo
